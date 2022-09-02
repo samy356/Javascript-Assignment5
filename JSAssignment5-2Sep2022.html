@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS_Assignment5.js" defer></script>
+    <title>Assignment5</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> <!--Import Google font-->
+    <style>
+        h1{
+            font-family: lobster,sans-serif;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        footer{
+            font-size: small;
+        }
+    </style>
+    <h1>Javascript Assignment5</h1><br/>
+</head>
+<body>
+    Radius <input type="number" id="rad" placeholder="Radius"/><br/>
+    Height <input type="number" id="hei" placeholder="Height"/><br/><br/>
+    <button onclick="typeObject = new cylinder((document.getElementById('rad').value),(document.getElementById('hei').value))">Cylinder</button>
+    <button onclick="typeObject = new sphere(document.getElementById('rad').value)">Sphere</button>
+    <button onclick="typeObject = new cone((document.getElementById('rad').value),(document.getElementById('hei').value))">Cone</button><br/><br/>
+    <button onclick="typeObject.getVolume()">Get Volume</button><br/><br/>
+    <output id="vol">Volume</output><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <footer>
+        <i>Dated = 2 Sep 2022, By Samyant</i> 
+    </footer>
+</body>
+</html>
