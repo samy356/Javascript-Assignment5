@@ -28,7 +28,7 @@ class cone extends cylinder{
     getVolume(){
         let vol = (22/7*(Math.pow(this.radius,2))*this.height/3).toFixed(4);
         console.log(vol);
-        document.getElementById('vol').value = `Sphere volume is ${vol}`;
+        document.getElementById('vol').value = `Cone volume is ${vol}`;
     }
 }
 let typeObject = new Object;
